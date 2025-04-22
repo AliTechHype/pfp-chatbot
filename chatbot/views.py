@@ -12,7 +12,6 @@ def is_relevant(message):
                     'food portal', 'pakistanfoodportal', 'pfp', 'what to eat', 'privacy policy', '??']
     keywords = greetings + words
     return any(keyword.lower() in message.lower() for keyword in keywords)
-
 def chat_api(request):
     if request.method == 'POST':
         try:
