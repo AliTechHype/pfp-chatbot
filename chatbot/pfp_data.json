@@ -20,6 +20,10 @@
     "answer": "Hello! 👋 I'm the Pakistan Food Portal assistant. How can I help you today with recipes or restaurants?"
   },
   {
+    "question": "??",
+    "answer": "Hello! 👋 I'm the Pakistan Food Portal assistant. How can I help you today with recipes or restaurants?"
+  },
+  {
     "question": "How are you?",
     "answer": "I'm just a friendly AI 😊 but I'm doing great! Ready to help you explore Pakistani cuisine."
   },
@@ -38,6 +42,10 @@
   {
     "question": "Does the Pakistan Food Portal have restaurants?",
     "answer": "Yes! You can explore hundreds of restaurants from across Pakistan on the portal. Check them out here: https://pakistanfoodportal.com/restaurants"
+  },
+  {
+    "question": "Does the Pakistan Food Portal have recipes?",
+    "answer": "Yes! You can explore hundreds of recipes on the portal. Check them out here: https://pakistanfoodportal.com/recipes"
   },
   {
     "question": "How was Pakistan Food Portal developed?",
@@ -60,15 +68,43 @@
     "answer": "I currently don’t have the exact launch date, but Pakistan Food Portal is actively growing and updating to better serve food lovers across Pakistan!"
   },
   {
+    "question": "do you know the launch date of pfp",
+    "answer": "I currently don’t have the exact launch date, but Pakistan Food Portal is actively growing and updating to better serve food lovers across Pakistan!"
+  },
+  {
     "question": "How many restaurants are on Pakistan Food Portal?",
     "answer": "The number of restaurants keeps growing! Visit this page to explore all listings: https://pakistanfoodportal.com/restaurants"
   },
   {
     "question": "Can you give me the information of a restaurant on Pakistan Food Portal?",
-    "answer": "Sure! Please tell me the name of the restaurant and I’ll find the details for you, or you just go search the restaurant on: https://pakistanfoodportal.com/search?name=kfc"
+    "answer": "Sure! Please tell me the name of the restaurant and I’ll find the details for you, or you just go search the restaurant on: https://pakistanfoodportal.com/search?name={restaurant name}"
   },
   {
-    "question": "Can you suggest me some best restaurants in Lahore?",
+    "question": "can you suggest me some best restaurants in Lahore?",
     "answer": "Absolutely! Here are some top-rated restaurants in Lahore:\n- Monal Lahore\n- Salt’n Pepper Village\n- Cosa Nostra\nYou can browse more at: https://pakistanfoodportal.com/restaurants"
+  },
+  {
+    "question": "Can you suggest me some best restaurants",
+    "answer": "Absolutely! Here are some top-rated restaurants in Lahore:\n- Monal Lahore\n- Salt’n Pepper Village\n- Cosa Nostra\nYou can browse more at: https://pakistanfoodportal.com/restaurants"
+  },
+  {
+    "question": "What tech stack is used in Pakistan Food Portal?",
+    "answer": "Pakistan Food Portal is built using Laravel for the backend and Next.js for the frontend. This combination offers both powerful server-side capabilities and a fast, SEO-friendly user interface."
+  },
+  {
+    "question": "What is the tech stack of PFP?",
+    "answer": "PFP (Pakistan Food Portal) uses Laravel for backend development and Next.js for its frontend, enabling a modern, performant, and scalable platform for users."
+  },
+  {
+    "question": "What is your tech stack",
+    "answer": "PFP (Pakistan Food Portal) uses Laravel for backend development and Next.js for its frontend, enabling a modern, performant, and scalable platform for users."
+  },
+  {
+    "question": "On what technology is Pakistan Food Portal built?",
+    "answer": "Pakistan Food Portal is developed with Laravel and Next.js — Laravel powers the backend logic and APIs, while Next.js handles the frontend with great performance and SEO optimization."
+  },
+  {
+    "question": "Which technologies are used in PFP?",
+    "answer": "PFP uses Laravel (PHP framework) for backend development and Next.js (React framework) for frontend development, creating a seamless experience across the platform."
   }
 ]
