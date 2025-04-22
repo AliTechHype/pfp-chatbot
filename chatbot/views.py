@@ -6,7 +6,6 @@ import google.generativeai as genai
 genai.configure(api_key="AIzaSyCSg_rCntFkzagtsgfyQvK8wjNXTnE7-gI")
 def chat_view(request):
     return render(request, 'chatbot/chat.html')
-
 def is_relevant(message):
     greetings = ['hello', 'hi', 'hey', 'how are you', 'good morning', 'good evening', '???']
     words = ['pakistan food', 'recipe', 'cuisine', 'dish', 'restaurant', 'ingredient',
