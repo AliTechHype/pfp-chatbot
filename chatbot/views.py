@@ -67,7 +67,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 import json
-
 from .chatbot import get_answer
 
 def chat_view(request):
