@@ -67,7 +67,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 import json
-import google.generativeai as genai
 from .chatbot import get_answer
 
 def chat_view(request):
