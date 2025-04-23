@@ -18,7 +18,7 @@ pfp_data_file_path = os.path.join(os.path.dirname(__file__), "pfp_data.json")
 with open(pfp_data_file_path, 'r', encoding='utf-8') as f:
     data = json.load(f)
 
-# Optional: Use huggingface for text generation
+    # Optional: Use huggingface for text generation
 generator = pipeline("text-generation", model="distilgpt2")
 
 # def get_answer(user_input):
@@ -59,8 +59,9 @@ def is_food_related(text):
 
 def is_restaurant_related(text):
     restaurant_keywords = [
+        "kfc", "daily deli co", "brim", "mcdonalds", "melt", "karachi silver spoon", "cheezious", "eggspectation restaurant cafe", "nandos", "chashni", "novu", "tim hortons", "hardees",
         "restaurant", "restaurants", "place to eat", "eatery", "where is", "about", "location of",
-        "menu", "nearby restaurant", "recommend"
+        "menu", "nearby restaurant", "recommend",
         # Popular areas/locations
         "dha", "dha raya", "gulberg", "mm alam", "f-7", "f-10", "clifton", "bahadurabad",
         "north nazimabad", "blue area", "bahria", "zamzama", "liberty", "model town"
@@ -76,6 +77,9 @@ def extract_restaurant_name(text):
     if match:
         return match.group(1).strip()
     match = re.search(r'what do you know about (.*)', text.lower())
+    if match:
+        return match.group(1).strip()
+    match = re.search(r'(.*) restaurant', text.lower())
     if match:
         return match.group(1).strip()
     return None

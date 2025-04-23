@@ -20,6 +20,10 @@
     "answer": "Hello! 👋 I'm the Pakistan Food Portal assistant. How can I help you today with recipes or restaurants?"
   },
   {
+    "question": "Hey",
+    "answer": "Hello! 👋 I'm the Pakistan Food Portal assistant. How can I help you today with recipes or restaurants?"
+  },
+  {
     "question": "??",
     "answer": "Hello! 👋 I'm the Pakistan Food Portal assistant. How can I help you today with recipes or restaurants?"
   },
@@ -106,5 +110,17 @@
   {
     "question": "Which technologies are used in PFP?",
     "answer": "PFP uses Laravel (PHP framework) for backend development and Next.js (React framework) for frontend development, creating a seamless experience across the platform."
+  },
+  {
+    "question": "Can I contribute a recipe?",
+    "answer": "Yes! You can share your own recipes on the Pakistan Food Portal. Just sign up and submit your recipe here: https://pakistanfoodportal.com/share-your-recipe"
+  },
+  {
+    "question": "Can I upload a recipe?",
+    "answer": "Yes! You can share your own recipes on the Pakistan Food Portal. Just sign up and submit your recipe here: https://pakistanfoodportal.com/share-your-recipe"
+  },
+  {
+    "question": "option to upload a recipe?",
+    "answer": "Yes! You can share your own recipes on the Pakistan Food Portal. Just sign up and submit your recipe here: https://pakistanfoodportal.com/share-your-recipe"
   }
 ]
