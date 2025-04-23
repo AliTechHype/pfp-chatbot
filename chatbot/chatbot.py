@@ -13,7 +13,6 @@ model = SentenceTransformer('all-MiniLM-L6-v2')
 index_path = os.path.join(os.path.dirname(__file__), "pfp_index.faiss")
 print("file path: ",os.path.join(os.path.dirname(__file__), "pfp_index.faiss"))
 index = faiss.read_index(index_path)
-# index = faiss.read_index("pfp_index.faiss")
 
 pfp_data_file_path = os.path.join(os.path.dirname(__file__), "pfp_data.json")
 with open(pfp_data_file_path, 'r', encoding='utf-8') as f:
