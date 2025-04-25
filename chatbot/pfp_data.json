@@ -24,6 +24,10 @@
     "answer": "Hello! 👋 I'm the Pakistan Food Portal assistant. How can I help you today with recipes or restaurants?"
   },
   {
+    "question": "hy",
+    "answer": "Hello! 👋 I'm the Pakistan Food Portal assistant. How can I help you today with recipes or restaurants?"
+  },
+  {
     "question": "??",
     "answer": "Hello! 👋 I'm the Pakistan Food Portal assistant. How can I help you today with recipes or restaurants?"
   },
@@ -161,6 +165,210 @@
   },
   {
     "question": "How do I add my restaurant to Pakistan Food Portal?",
-    "answer": "Adding your restaurant is easy. Just visit https://pakistanfoodportal.com/register-your-restaurant and fill in the required details."
+    "answer": "Adding your restaurant is easy. Just visit and fill in the required details here: https://pakistanfoodportal.com/register-your-restaurant "
+  },
+  {
+    "question": "Can I earn points on Pakistan Food Portal?",
+    "answer": "Yes! You can earn points through our referral system. Invite friends to join and watch your points grow!"
+  },
+  {
+    "question": "How does the referral system work?",
+    "answer": "You can invite friends to join Pakistan Food Portal using your unique referral link. Each time someone signs up using your link, you earn points!"
+  },
+  {
+    "question": "Can I share recipes on Pakistan Food Portal?",
+    "answer": "Absolutely! Share your favorite recipes here: https://pakistanfoodportal.com/share-your-recipe"
+  },
+  {
+    "question": "Can I suggest a restaurant?",
+    "answer": "Yes! You can recommend restaurants by sharing their details with the community."
+  },
+  {
+    "question": "Can I invite friends to use 'What to Eat'?",
+    "answer": "Yes! You can invite friends to join you in our fun 'What to Eat' tool and explore restaurant suggestions together: https://pakistanfoodportal.com/what-to-eat"
+  },
+  {
+    "question": "Can the 'What to Eat' section suggest restaurants?",
+    "answer": "Yes! Our 'What to Eat' tool offers personalized restaurant suggestions based on your preferences: https://pakistanfoodportal.com/what-to-eat"
+  },
+  {
+    "question": "Does PFP have a blog?",
+    "answer": "Yes! Explore the latest food trends, cooking tips, and restaurant stories in our blog: https://pakistanfoodportal.com/blog/"
+  },
+  {
+    "question": "Where can I read the latest blog posts?",
+    "answer": "Catch up on the latest from the Pakistani food scene in our blog section here: https://pakistanfoodportal.com/blog/"
+  },
+  {
+    "question": "Does Pakistan Food Portal have a blog?",
+    "answer": "Yes! Check out food stories, recipes, and restaurant tips on our blog: https://pakistanfoodportal.com/blog/"
+  },
+  {
+    "question": "Where can I read articles about food on PFP?",
+    "answer": "Explore food-related blogs and updates here: https://pakistanfoodportal.com/blog/"
+  },
+  {
+    "question": "Do you write about food trends?",
+    "answer": "Yes! Head to our blog for the latest in food, recipes, and restaurant reviews: https://pakistanfoodportal.com/blog/"
+  },
+  {
+    "question": "Do HBL or UBL offer discounts on restaurants?",
+    "answer": "Yes! You can view all available bank discounts on restaurants here: https://pakistanfoodportal.com/discounts-and-offers. Just search for HBL or UBL."
+  },
+  {
+    "question": "How can I see which banks offer discounts?",
+    "answer": "Go to: https://pakistanfoodportal.com/discounts-and-offers and search by bank name or card type (Visa, Mastercard, etc.)"
+  },
+  {
+    "question": "Are there discounts for Al Baraka Bank?",
+    "answer": "Yes, visit this link for Al Baraka Bank’s discount details: https://pakistanfoodportal.com/bank/discounts-and-offers/30?name=Al%20Baraka%20Bank"
+  },
+  {
+    "question": "Which restaurants are giving discounts for Visa card holders?",
+    "answer": "Use our filters on the discounts page to find Visa card offers here: https://pakistanfoodportal.com/discounts-and-offers"
+  },
+  {
+    "question": "Can I find UnionPay discounts?",
+    "answer": "Absolutely! Use the filter to search by UnionPay cards here: https://pakistanfoodportal.com/discounts-and-offers"
+  },
+  {
+    "question": "Where can I search for restaurant offers with PayPak?",
+    "answer": "Use our offer search tool and apply the 'PayPak' filter here: https://pakistanfoodportal.com/discounts-and-offers"
+  },
+  {
+    "question": "Does Bank Alfalah offer restaurant discounts?",
+    "answer": "Yes, you can search for Bank Alfalah's current offers here: https://pakistanfoodportal.com/discounts-and-offers"
+  },
+  {
+    "question": "Show me restaurant deals using HBL card",
+    "answer": "To view HBL-related discounts, visit: https://pakistanfoodportal.com/discounts-and-offers and filter by HBL or your card type."
+  },
+  {
+    "question": "Can I see all banks offering food discounts?",
+    "answer": "Yes! Visit: https://pakistanfoodportal.com/discounts-and-offers to explore all current bank offers."
+  },
+  {
+    "question": "What is the 'What to Eat' feature?",
+    "answer": "It's a fun tool to help you decide what to eat today. Try it here: https://pakistanfoodportal.com/what-to-eat"
+  },
+  {
+    "question": "Can I invite friends in 'What to Eat'?",
+    "answer": "Yes! You can invite friends and share your food choices. Let them help you decide what to eat today."
+  },
+  {
+    "question": "Today I want to eat something, any suggestions?",
+    "answer": "Try our 'What to Eat' section — it gives you personalized suggestions: https://pakistanfoodportal.com/what-to-eat"
+  },
+  {
+    "question": "Can I get food recommendations for today?",
+    "answer": "Sure! Use the 'What to Eat' tool for fun suggestions and restaurant ideas: https://pakistanfoodportal.com/what-to-eat"
+  },
+  {
+    "question": "Is there a way to share a restaurant I like?",
+    "answer": "Definitely! You can share your favorite restaurants directly on the portal so others can explore them too."
+  },
+  {
+    "question": "Does PFP have a point system?",
+    "answer": "Yes, Pakistan Food Portal lets users collect points by referring others. Points can help you unlock exciting benefits."
+  },
+  {
+    "question": "How can I find restaurant discounts by using my bank card?",
+    "answer": "You can check all available restaurant discounts by visiting: https://pakistanfoodportal.com/discounts-and-offers and selecting your bank or card type."
+  },
+  {
+    "question": "Do any banks offer restaurant deals in Pakistan?",
+    "answer": "Yes! Many banks offer special discounts at restaurants. You can view them here: https://pakistanfoodportal.com/discounts-and-offers"
+  },
+  {
+    "question": "Can I search discounts by card type like Visa or Mastercard?",
+    "answer": "Absolutely! Use the filters on this page to search by Visa, Mastercard, UnionPay, or PayPak: https://pakistanfoodportal.com/discounts-and-offers"
+  },
+  {
+    "question": "I have a bank card, where can I check if I get food discounts?",
+    "answer": "Visit our discount finder here: https://pakistanfoodportal.com/discounts-and-offers and search by your bank or card."
+  },
+  {
+    "question": "What kind of discounts do banks offer on restaurants?",
+    "answer": "Banks offer various percentage discounts, BOGO deals, and exclusive offers. Check the current deals here: https://pakistanfoodportal.com/discounts-and-offers"
+  },
+  {
+    "question": "Is there a way to filter restaurants that accept bank offers?",
+    "answer": "Yes! On the discounts page, use filters to view restaurants with active bank offers: https://pakistanfoodportal.com/discounts-and-offers"
+  },
+  {
+    "question": "Which restaurants accept discounts from bank cards?",
+    "answer": "You can see the list of restaurants accepting bank discounts here: https://pakistanfoodportal.com/discounts-and-offers"
+  },
+  {
+    "question": "Can I use my debit card for restaurant discounts?",
+    "answer": "Yes! Most discounts apply to debit and credit cards from supported banks. See details here: https://pakistanfoodportal.com/discounts-and-offers"
+  },
+  {
+    "question": "Do I need to activate anything to get bank discounts?",
+    "answer": "Usually no activation is needed. Just pay with your eligible card. For terms, check your bank’s offer page: https://pakistanfoodportal.com/discounts-and-offers"
+  },
+  {
+    "question": "Where can I get updates on the latest bank offers for dining?",
+    "answer": "Stay updated on all bank-related restaurant discounts here: https://pakistanfoodportal.com/discounts-and-offers"
+  },
+  {
+    "question": "Do restaurant discounts change every month?",
+    "answer": "Yes, some offers are time-limited. Visit https://pakistanfoodportal.com/discounts-and-offers regularly for the latest info."
+  },
+  {
+    "question": "Is there a list of restaurants giving discounts based on banks?",
+    "answer": "Yes! Browse the full list and filter by bank or card here: https://pakistanfoodportal.com/discounts-and-offers"
+  },
+  {
+    "question": "How many restaurants give bank card discounts?",
+    "answer": "Many top restaurants offer bank card discounts. Visit: https://pakistanfoodportal.com/discounts-and-offers to see the count and list."
+  },
+  {
+    "question": "Which banks are offering restaurant discounts this week?",
+    "answer": "You can explore current bank offers for restaurants here: https://pakistanfoodportal.com/discounts-and-offers"
+  },
+  {
+    "question": "Where can I find food tips or advice?",
+    "answer": "Our blog shares tips on cooking, food trends, and eating out: https://pakistanfoodportal.com/blog/"
+  },
+  {
+    "question": "Can I find food recommendations on your blog?",
+    "answer": "Absolutely! We publish articles with restaurant picks and food reviews. Check them out: https://pakistanfoodportal.com/blog/"
+  },
+  {
+    "question": "Are there recipe articles on the blog?",
+    "answer": "Yes! You'll find detailed recipe blogs, cooking tips, and more here: https://pakistanfoodportal.com/blog/"
+  },
+  {
+    "question": "Do you post restaurant reviews on the blog?",
+    "answer": "Yes, we cover restaurant reviews, food festivals, and recommendations in our blog: https://pakistanfoodportal.com/blog/"
+  },
+  {
+    "question": "Where can I learn about new food places in Pakistan?",
+    "answer": "Visit our blog for new restaurant launches, trending food spots, and more: https://pakistanfoodportal.com/blog/"
+  },
+  {
+    "question": "I want to stay updated with food news, where should I go?",
+    "answer": "Follow our blog for food news, events, recipe ideas, and restaurant reviews: https://pakistanfoodportal.com/blog/"
+  },
+  {
+    "question": "Is your blog updated regularly?",
+    "answer": "Yes, we update it with fresh content on food, recipes, and restaurants! Explore: https://pakistanfoodportal.com/blog/"
+  },
+  {
+    "question": "Can I get inspiration for cooking from your blog?",
+    "answer": "Definitely! Our blog features inspiration for Pakistani and fusion recipes: https://pakistanfoodportal.com/blog/"
+  },
+  {
+    "question": "Where can I read about Pakistani cuisine online?",
+    "answer": "Check out our blog for articles on traditional and modern Pakistani food: https://pakistanfoodportal.com/blog/"
+  },
+  {
+    "question": "Does the blog talk about street food in Pakistan?",
+    "answer": "Yes! We often feature stories and recommendations on street food gems: https://pakistanfoodportal.com/blog/"
+  },
+  {
+    "question": "What kind of content do you post on your blog?",
+    "answer": "Our blog includes recipes, restaurant reviews, food trends, and cooking tips: https://pakistanfoodportal.com/blog/"
   }
 ]
