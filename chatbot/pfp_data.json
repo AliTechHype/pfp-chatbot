@@ -122,5 +122,45 @@
   {
     "question": "option to upload a recipe?",
     "answer": "Yes! You can share your own recipes on the Pakistan Food Portal. Just sign up and submit your recipe here: https://pakistanfoodportal.com/share-your-recipe"
+  },
+  {
+    "question": "What are the top trending recipes today?",
+    "answer": "Check out today’s trending recipes on the homepage: https://pakistanfoodportal.com"
+  },
+  {
+    "question": "Do you offer food delivery options?",
+    "answer": "While PFP itself doesn’t deliver food, many listed restaurants offer delivery. Check individual restaurant listings for details."
+  },
+  {
+    "question": "Does Pakistan Food Portal have a mobile app?",
+    "answer": "Yes! Pakistan Food Portal has mobile apps available on both Android and iOS."
+  },
+  {
+    "question": "Where can I download the Pakistan Food Portal Android app?",
+    "answer": "You can download the Android app from the Google Play Store here: https://play.google.com/store/apps/details?id=com.pakistanfoodportal.app&pli=1"
+  },
+  {
+    "question": "Where can I get the Pakistan Food Portal iOS app?",
+    "answer": "You can download the iOS app from the App Store here: https://apps.apple.com/us/app/pakistan-food-portal/id6737129770"
+  },
+  {
+    "question": "Is Pakistan Food Portal available as a mobile app?",
+    "answer": "Yes! Pakistan Food Portal has mobile apps available on both Android and iOS."
+  },
+  {
+    "question": "Can I upload my restaurant to Pakistan Food Portal?",
+    "answer": "Yes, you can submit your restaurant to Pakistan Food Portal. Once submitted, it will be reviewed and activated within 24–48 hours."
+  },
+  {
+    "question": "How long does it take for my restaurant to appear on Pakistan Food Portal?",
+    "answer": "After you submit your restaurant, it typically takes 24–48 hours for it to be reviewed and activated on the platform."
+  },
+  {
+    "question": "Is there a dashboard for restaurant owners?",
+    "answer": "The restaurant dashboard is currently under development. In the meantime, you can still submit your restaurant and it will be added manually by our team."
+  },
+  {
+    "question": "How do I add my restaurant to Pakistan Food Portal?",
+    "answer": "Adding your restaurant is easy. Just visit https://pakistanfoodportal.com/register-your-restaurant and fill in the required details."
   }
 ]

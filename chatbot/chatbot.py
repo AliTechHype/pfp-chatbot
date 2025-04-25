@@ -99,7 +99,7 @@ def get_answer(user_input, threshold=0.45):
         if is_food_related(user_input):
             # Optionally, extract the dish name
             fallback = (
-                "I don't have the exact recipe, but you can explore recipes here: "
+                "I don't have the exact recipe, but you can explore recipes here: \n"
                 "https://pakistanfoodportal.com/recipes"
             )
             return fallback
@@ -107,7 +107,7 @@ def get_answer(user_input, threshold=0.45):
             restaurant_name = extract_restaurant_name(user_input)
             if restaurant_name:
                 return (
-                    f"You can find details about {restaurant_name.title()} here: "
+                    f"You can find details about {restaurant_name.title()} here: \n"
                     f"https://pakistanfoodportal.com/search?name={restaurant_name}"
                 )
             return (
