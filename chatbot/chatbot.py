@@ -231,6 +231,8 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 import os
 import re
+import threading
+import subprocess
 
 # File paths
 BASE_DIR = os.path.dirname(__file__)
@@ -310,6 +312,19 @@ def extract_restaurant_name(text):
             return match.group(1).strip()
     return None
 
+def run_training():
+    print("🔥 Training thread started")
+    try:
+        subprocess.run([
+            "python",
+            "-c",
+            "from chatbot.chatbot import train_unanswered_questions; train_unanswered_questions()"
+        ], check=True)
+        # subprocess.run(["pkill", "-f", "runserver"])
+        subprocess.Popen(["python", "manage.py", "runserver", "0.0.0.0:8000"])
+    except Exception as e:
+        print("Error running subprocess:", e)
+
 
 def save_unanswered_question(question):
 
@@ -325,12 +340,21 @@ def save_unanswered_question(question):
             with open(UNANSWERED_FILE, 'w', encoding='utf-8') as f:
                 json.dump(unanswered, f, ensure_ascii=False, indent=2)
             print(f"Saved unanswered question: {question}")
+        thread = threading.Thread(target=run_training)
+        thread.start()
+
     except Exception as e:
         print("Error saving unanswered question:", e)
 
 
 def train_unanswered_questions():
-    from transformers import pipeline  # Import only when needed
+    from transformers import pipeline
+    import textwrap
+    import google.generativeai as genai
+
+    # Configure API key
+    genai.configure(api_key="AIzaSyCSg_rCntFkzagtsgfyQvK8wjNXTnE7-gI")
+
     generator = pipeline("text-generation", model="distilgpt2")
 
     if not os.path.exists(UNANSWERED_FILE):
@@ -350,9 +374,63 @@ def train_unanswered_questions():
     new_data = []
     for item in unanswered:
         q = item['question']
-        prompt = f"Question: {q}\nAnswer about Pakistan Food Portal:"
-        response = generator(prompt, max_length=80, do_sample=True)[0]['generated_text']
-        answer = response.split("Answer about Pakistan Food Portal:")[-1].strip()
+        # prompt = textwrap.dedent(f"""
+        #             You are a helpful assistant for Pakistan Food Portal (https://pakistanfoodportal.com), a site about Pakistani cuisine,
+        #             including restaurant listings, food recipes, and a 'What to Eat' feature. You can also help users search for food-related queries.
+        #
+        #             You should respond politely to greetings (e.g., 'hi', 'hello', heyyylloooo) and small talk (e.g., 'how are you?'), but for questions outside the site’s purpose,
+        #             respond with: 'Sorry, I can only help with questions related to Pakistan Food Portal.'
+        #
+        #             If the user asks about restaurants in general, give a brief description (e.g., 'You can explore a variety of Pakistani restaurants based on cities, cuisines, or ratings.')
+        #             and then provide the link: https://pakistanfoodportal.com/restaurants.
+        #
+        #             If the user asks about recipes, describe what they can expect (e.g., 'You’ll find a wide variety of Pakistani dishes like Biryani, Karahi, and more with step-by-step instructions.')
+        #             and provide the link: https://pakistanfoodportal.com/recipes.
+        #
+        #             If the user asks about a specific restaurant, first create a slug by converting the name to lowercase and replacing spaces with hyphens
+        #             (e.g., 'Karachi Spice Biryani' → 'karachi-spice-biryani') and then give a friendly message before sharing the link like:
+        #             'Here’s the page for Karachi Spice Biryani: https://pakistanfoodportal.com/restaurant/karachi-spice-biryani.'
+        #
+        #             If the user wants to find something or has a custom query, invite them to search and provide the link like:
+        #             'You can search for it here: https://pakistanfoodportal.com/search?name=chicken-karahi'
+        #             (replace spaces with hyphens in the search term).
+        #
+        #             Always keep answers helpful, friendly, and related to Pakistan Food Portal. Avoid short, robotic replies—offer a helpful sentence before sharing links.
+        #
+        #             User Question: {q}
+        #         """).strip()
+        #
+        # response = generator(prompt, max_new_tokens=60, do_sample=True, truncation=True)[0]['generated_text']
+        # answer = response.split("Answer about Pakistan Food Portal:")[-1].strip()
+        model = genai.GenerativeModel("gemini-2.0-flash", system_instruction=(
+            "You are a helpful assistant for Pakistan Food Portal (https://pakistanfoodportal.com), a site about Pakistani cuisine, "
+            "including restaurant listings, food recipes, and a 'What to Eat' feature. You can also help users search for food-related queries.\n\n"
+
+            "You should respond politely to greetings (e.g., 'hi', 'hello') and small talk (e.g., 'how are you?'), but for questions outside the site’s purpose, "
+            "respond with: 'Sorry, I can only help with questions related to Pakistan Food Portal.'\n\n"
+
+            "If the user asks about restaurants in general, give a brief description (e.g., 'You can explore a variety of Pakistani restaurants based on cities, cuisines, or ratings.') "
+            "and then provide the link: https://pakistanfoodportal.com/restaurants.\n\n"
+
+            "If the user asks about recipes, describe what they can expect (e.g., 'You’ll find a wide variety of Pakistani dishes like Biryani, Karahi, and more with step-by-step instructions.') "
+            "and provide the link: https://pakistanfoodportal.com/recipes.\n\n"
+
+            "If the user asks about a specific restaurant, first create a slug by converting the name to lowercase and replacing spaces with hyphens "
+            "(e.g., 'Karachi Spice Biryani' → 'karachi-spice-biryani') and then give a friendly message before sharing the link like: "
+            "'Here’s the page for Karachi Spice Biryani: https://pakistanfoodportal.com/restaurant/karachi-spice-biryani.'\n\n"
+
+            "If the user wants to find something or has a custom query, invite them to search and provide the link like: "
+            "'You can search for it here: https://pakistanfoodportal.com/search?name=chicken-karahi' "
+            "(replace spaces with hyphens in the search term).\n\n"
+
+            "Always keep answers helpful, friendly, and related to Pakistan Food Portal. Avoid short, robotic replies—offer a helpful sentence before sharing links."
+        ))
+
+        response = model.generate_content(
+            f"You are a chatbot for Pakistan Food Portal (https://pakistanfoodportal.com). Answer this question only if it's related to the portal: {q}"
+        )
+
+        answer = response.text.strip()
 
         if not answer:
             answer = "This is a food-related question, but I currently don't have a detailed answer."
@@ -371,6 +449,7 @@ def train_unanswered_questions():
         json.dump([], f)
 
     print(f"Trained and added {len(new_data)} new entries.")
+    subprocess.run(["python", os.path.join(BASE_DIR, "create_index.py")], check=True)
 
 
 def get_answer(user_input, threshold=0.45):

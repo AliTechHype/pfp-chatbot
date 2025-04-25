@@ -24,7 +24,7 @@ index.add(np.array(embeddings))
 # Save index and data
 file_path_pfp_index_faiss = os.path.join(os.path.dirname(__file__), "pfp_index.faiss")
 faiss.write_index(index, file_path_pfp_index_faiss)
-
+print("successfully updated faiss")
 # Save with proper encoding
 with open(file_path, "w", encoding='utf-8') as f:
     json.dump(data, f, ensure_ascii=False, indent=2)
