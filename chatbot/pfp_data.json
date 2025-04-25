@@ -16,6 +16,10 @@
     "answer": "Use our 'What to Eat' tool to find meal ideas, play and know what you can eat today: https://pakistanfoodportal.com/what-to-eat"
   },
   {
+    "question": "What to eat",
+    "answer": "Use our 'What to Eat' tool to find meal ideas, play and know what you can eat today: https://pakistanfoodportal.com/what-to-eat"
+  },
+  {
     "question": "Hello",
     "answer": "Hello! 👋 I'm the Pakistan Food Portal assistant. How can I help you today with recipes or restaurants?"
   },
@@ -361,6 +365,10 @@
   },
   {
     "question": "Where can I read about Pakistani cuisine online?",
+    "answer": "Check out our blog for articles on traditional and modern Pakistani food: https://pakistanfoodportal.com/blog/"
+  },
+  {
+    "question": "where can i find blogs?",
     "answer": "Check out our blog for articles on traditional and modern Pakistani food: https://pakistanfoodportal.com/blog/"
   },
   {
