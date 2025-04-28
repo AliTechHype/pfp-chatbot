@@ -65,6 +65,7 @@
 #     return JsonResponse({'error': 'Invalid request method'}, status=405)
 
 from django.shortcuts import render
+
 from django.http import JsonResponse
 import json
 from .chatbot import get_answer
