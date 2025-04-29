@@ -73,6 +73,7 @@ def chat_view(request):
     return render(request, 'chatbot/chat.html')
 
 def chat_api(request):
+
     if request.method == 'POST':
         try:
             data = json.loads(request.body)
