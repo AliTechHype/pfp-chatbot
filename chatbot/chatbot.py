@@ -230,7 +230,6 @@ import json
 import faiss
 
 import numpy as np
-
 from sentence_transformers import SentenceTransformer
 import os
 import re
