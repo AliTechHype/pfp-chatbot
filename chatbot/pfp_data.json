@@ -392,10 +392,6 @@
     "answer": "Yes, I am a chatbot designed to help you with Pakistan Food Portal. I can answer questions about restaurants, recipes, and other features of the site."
   },
   {
-    "question": "are you a chatbot?",
-    "answer": "Yes, I am a helpful assistant for Pakistan Food Portal."
-  },
-  {
     "question": "are you a chatbot",
     "answer": "Yes, I am a chatbot designed to assist you with Pakistan Food Portal. I can help you find restaurants, recipes, and information about Pakistani cuisine."
   },
@@ -414,5 +410,9 @@
   {
     "question": "heeeyyyloooo",
     "answer": "Hello! How can I help you with Pakistan Food Portal today?"
+  },
+  {
+    "question": "what kind of content",
+    "answer": "Pakistan Food Portal offers a variety of content related to Pakistani cuisine, including restaurant listings, food recipes, and a 'What to Eat' feature."
   }
 ]

@@ -320,6 +320,10 @@ def run_training():
             "-c",
             "from chatbot.chatbot import train_unanswered_questions; train_unanswered_questions()"
         ], check=True)
+        subprocess.run([
+            "python",
+            "chatbot/chatbot.py"
+        ], check=True)
         # subprocess.run(["pkill", "-f", "runserver"])
         subprocess.Popen(["python", "manage.py", "runserver", "0.0.0.0:8000"])
     except Exception as e:
