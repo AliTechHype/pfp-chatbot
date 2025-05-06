@@ -324,10 +324,23 @@ def run_training():
             "python",
             "chatbot/chatbot.py"
         ], check=True)
+        subprocess.run([
+            "python",
+            "chatbot/create_index.py"
+        ], check=True)
+
         # subprocess.run(["pkill", "-f", "runserver"])
-        subprocess.Popen(["python", "manage.py", "runserver", "0.0.0.0:8000"])
+        # subprocess.Popen(["python", "manage.py", "runserver", "0.0.0.0:8000"])
     except Exception as e:
         print("Error running subprocess:", e)
+
+def reload_index_and_data():
+    global index, data
+    print("🔄 Reloading FAISS index and data...")
+    index = faiss.read_index(INDEX_PATH)
+    with open(PFP_DATA_FILE, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    print("✅ Reload complete")
 
 
 def save_unanswered_question(question):
@@ -425,6 +438,7 @@ def train_unanswered_questions():
 
     print(f"Trained and added {len(new_data)} new entries.")
     subprocess.run(["python", os.path.join(BASE_DIR, "create_index.py")], check=True)
+    reload_index_and_data()
 
 
 def get_answer(user_input, threshold=0.45):
