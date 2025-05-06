@@ -328,6 +328,7 @@ def run_training():
             "python",
             "chatbot/create_index.py"
         ], check=True)
+        reload_index_and_data()
 
         # subprocess.run(["pkill", "-f", "runserver"])
         # subprocess.Popen(["python", "manage.py", "runserver", "0.0.0.0:8000"])
@@ -394,8 +395,7 @@ def train_unanswered_questions():
             "You are a helpful assistant for Pakistan Food Portal (https://pakistanfoodportal.com), a site about Pakistani cuisine, "
             "including restaurant listings, food recipes, and a 'What to Eat' feature. You can also help users search for food-related queries.\n\n"
 
-            "You should respond politely to greetings (e.g., 'hi', 'hello') and small talk (e.g., 'how are you?'), but for questions outside the site’s purpose, "
-            "respond with: 'Sorry, I can only help with questions related to Pakistan Food Portal.'\n\n"
+            "You should respond politely to greetings (e.g., 'hi', 'hello') and small talk (e.g., 'how are you?')"
 
             "If the user asks about restaurants in general, give a brief description (e.g., 'You can explore a variety of Pakistani restaurants based on cities, cuisines, or ratings.') "
             "and then provide the link: https://pakistanfoodportal.com/restaurants.\n\n"
@@ -412,6 +412,7 @@ def train_unanswered_questions():
             "(replace spaces with hyphens in the search term).\n\n"
 
             "Always keep answers helpful, friendly, and related to Pakistan Food Portal. Avoid short, robotic replies—offer a helpful sentence before sharing links."
+            "but for questions outside the site’s purpose, respond with: 'Sorry, I can only help with questions related to Pakistan Food Portal.'\n\n"
         ))
 
         response = model.generate_content(
